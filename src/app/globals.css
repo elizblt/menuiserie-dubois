@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 43 27% 96%;
-    --foreground: 20 14.3% 4.1%;
-    --card: 43 27% 96%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 43 27% 96%;
-    --popover-foreground: 20 14.3% 4.1%;
-    --primary: 28 84% 45%;
-    --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 43 10% 90%;
-    --secondary-foreground: 24 9.8% 10%;
-    --muted: 43 10% 90%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 43 10% 90%;
-    --accent-foreground: 24 9.8% 10%;
+    --background: 43 14% 97%;
+    --foreground: 18 17% 15%;
+    --card: 43 14% 97%;
+    --card-foreground: 18 17% 15%;
+    --popover: 43 14% 97%;
+    --popover-foreground: 18 17% 15%;
+    --primary: 25 67% 32%; /* Marron bois noble #8B4513 */
+    --primary-foreground: 43 14% 97%;
+    --secondary: 37 37% 82%; /* Beige crème */
+    --secondary-foreground: 18 17% 15%;
+    --muted: 37 37% 82%;
+    --muted-foreground: 18 9% 45%;
+    --accent: 35 65% 52%; /* Or pâle #CD853F */
+    --accent-foreground: 43 14% 97%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --border: 43 13% 87%;
-    --input: 43 13% 87%;
-    --ring: 28 84% 45%;
-    --radius: 0.5rem;
+    --border: 37 25% 85%;
+    --input: 37 25% 85%;
+    --ring: 25 67% 32%;
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-    --primary: 28 84% 45%;
-    --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
+    --background: 18 17% 8%;
+    --foreground: 43 14% 97%;
+    --card: 18 17% 8%;
+    --card-foreground: 43 14% 97%;
+    --popover: 18 17% 8%;
+    --popover-foreground: 43 14% 97%;
+    --primary: 25 67% 32%;
+    --primary-foreground: 43 14% 97%;
+    --secondary: 18 15% 15%;
+    --secondary-foreground: 43 14% 97%;
+    --muted: 18 15% 15%;
+    --muted-foreground: 37 15% 65%;
+    --accent: 35 65% 52%;
+    --accent-foreground: 43 14% 97%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 28 84% 45%;
+    --border: 18 15% 15%;
+    --input: 18 15% 15%;
+    --ring: 25 67% 32%;
   }
 }
 
@@ -59,14 +59,72 @@
   }
 }
 
-/* Custom styles for Menuiserie Dubois */
+/* Custom styles premium pour Menuiserie Dubois */
 @layer base {
   body {
     font-family: var(--font-sans), system-ui, sans-serif;
   }
   
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+  
+  .font-crimson {
+    font-family: var(--font-crimson), serif;
+  }
+  
   .wood-texture {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" fill="none"><path d="M0 10c20-2 40 2 60-1s40 3 40 3v7H0v-9z" fill="%23b8914f" opacity="0.1"/></svg>');
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" fill="none"><path d="M0 10c20-2 40 2 60-1s40 3 40 3v7H0v-9z" fill="%238B4513" opacity="0.15"/></svg>');
     background-size: 200px 20px;
+  }
+  
+  .wood-grain {
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(205, 133, 63, 0.1) 0%, transparent 50%),
+      linear-gradient(135deg, rgba(139, 69, 19, 0.05) 0%, transparent 100%);
+  }
+  
+  .premium-gradient {
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 50%, #CD853F 100%);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(245, 245, 220, 0.8);
+    border: 1px solid rgba(139, 69, 19, 0.2);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold px-8 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-semibold px-8 py-3 rounded-xl transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply py-24 lg:py-32;
+  }
+  
+  .container-premium {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .card-premium {
+    @apply bg-white/80 backdrop-blur-sm border border-primary-200/50 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105;
+  }
+  
+  .heading-premium {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-900 leading-tight;
+  }
+  
+  .text-premium {
+    @apply text-lg sm:text-xl text-primary-800/80 leading-relaxed;
   }
 }

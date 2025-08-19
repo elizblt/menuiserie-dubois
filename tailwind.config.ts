@@ -23,7 +23,7 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
+        brand: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
@@ -51,30 +51,55 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Couleurs personnalisées pour la menuiserie
-        wood: {
-          50: "#faf7f2",
-          100: "#f4ede0",
-          200: "#e7d8c0",
-          300: "#d8bf97",
-          400: "#c5a16d",
-          500: "#b8914f",
-          600: "#a17b42",
-          700: "#856238",
-          800: "#6b4f32",
-          900: "#58412b",
+        // Couleurs premium pour la menuiserie
+        primary: {
+          50: "#fdf8f6",
+          100: "#f2e8e5", 
+          200: "#eaddd7",
+          300: "#e0cec7",
+          400: "#d2b8a9",
+          500: "#D2691E", // Orange bois chaud
+          600: "#8B4513", // Marron bois noble
+          700: "#6b3410",
+          800: "#5a2d0d",
+          900: "#2F1B14", // Brun sombre
         },
-        sage: {
-          50: "#f6f7f6",
-          100: "#e3e5e2",
-          200: "#c6cac4",
-          300: "#a1a99d",
-          400: "#7d8976",
-          500: "#616d5b",
-          600: "#4c5647",
-          700: "#3f453c",
-          800: "#353932",
-          900: "#2e302c",
+        woodAccent: {
+          50: "#fefdf8",
+          100: "#fdf9ed",
+          200: "#fcf3d9",
+          300: "#faebba",
+          400: "#f7dd8e",
+          500: "#CD853F", // Or pâle
+          600: "#b8703a",
+          700: "#a05b32",
+          800: "#864d2e",
+          900: "#70412a",
+        },
+        neutral: {
+          50: "#F5F5DC", // Beige crème
+          100: "#f0f0dc",
+          200: "#e8e8d0",
+          300: "#dcdcbf",
+          400: "#cbcba8",
+          500: "#b8b896",
+          600: "#a5a584",
+          700: "#8f8f73",
+          800: "#7a7a62",
+          900: "#696951",
+        },
+        // Couleurs shadcn/ui personnalisées
+        wood: {
+          50: "#fdf8f6",
+          100: "#f2e8e5",
+          200: "#eaddd7", 
+          300: "#e0cec7",
+          400: "#d2b8a9",
+          500: "#8B4513", // Marron bois noble
+          600: "#6b3410",
+          700: "#5a2d0d",
+          800: "#2F1B14", // Brun sombre
+          900: "#1a0f08",
         }
       },
       borderRadius: {
