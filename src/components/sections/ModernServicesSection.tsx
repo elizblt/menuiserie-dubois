@@ -4,6 +4,7 @@ import { ChefHat, Home, Wrench, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const services = [
   {
@@ -11,7 +12,7 @@ const services = [
     title: 'Cuisines sur mesure',
     description: 'Conception et réalisation de cuisines entièrement personnalisées avec des matériaux de qualité. Plans 3D inclus.',
     icon: ChefHat,
-    image: '/images/services/cuisine.jpg',
+    image: '/cuisine.jpg',
     price: 'À partir de 8 000€'
   },
   {
@@ -19,7 +20,7 @@ const services = [
     title: 'Escaliers en bois',
     description: 'Escaliers droits, quart tournant ou hélicoïdaux. Bois massif avec finitions impeccables.',
     icon: Home,
-    image: '/images/services/escalier.jpg',
+    image: '/escalier.png',
     price: 'À partir de 3 500€'
   },
   {
@@ -27,7 +28,7 @@ const services = [
     title: 'Aménagements intérieurs',
     description: 'Dressings, bibliothèques, bureaux sur mesure. Optimisation de chaque espace de votre maison.',
     icon: Wrench,
-    image: '/images/services/amenagement.jpg',
+    image: '/amenagement.jpg',
     price: 'À partir de 1 200€'
   }
 ];
@@ -53,9 +54,7 @@ export function ModernServicesSection() {
                 {/* Image placeholder */}
                 <div className="w-full h-full flex items-center justify-center text-gray-400">
                   <div className="text-center space-y-3">
-                    <service.icon className="w-12 h-12 mx-auto" />
-                    <div className="text-sm font-medium">{service.title}</div>
-                    <div className="text-xs">Image HD - {service.id}</div>
+                    <Image src={service.image} alt={service.title} layout="fill" className="object-cover rounded-lg" />
                   </div>
                 </div>
               </div>

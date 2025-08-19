@@ -3,6 +3,7 @@
 import { ArrowRight, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function ModernHeroSection() {
   return (
@@ -12,10 +13,8 @@ export function ModernHeroSection() {
         <div className="w-full h-full bg-gray-300 flex items-center justify-center">
           <div className="text-center space-y-4 text-gray-500">
             <div className="w-24 h-24 mx-auto bg-gray-400 rounded-lg flex items-center justify-center">
-              <div className="text-3xl">🔨</div>
+              <Image src="/wood-hero.jpg" alt="Atelier de menuiserie" layout="fill" className="object-cover rounded-lg" />
             </div>
-            <div className="text-xl font-semibold">Photo d&apos;atelier menuiserie</div>
-            <div className="text-sm">Artisan au travail - Image réaliste HD</div>
           </div>
         </div>
         
