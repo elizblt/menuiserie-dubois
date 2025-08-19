@@ -49,25 +49,34 @@ export default function AProposPage() {
               <h2 className="heading-lg mb-8 text-center">Notre Équipe</h2>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl">👨‍🔧</span>
+                  <div className="w-32 h-32 bg-gradient-to-br from-accent/10 to-accent/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-accent/20">
+                    <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-accent">JD</span>
+                    </div>
                   </div>
                   <h3 className="heading-md mb-2">Jean Dubois</h3>
                   <p className="text-body">Fondateur & Maître Menuisier</p>
+                  <p className="text-sm text-gray-500 mt-1">30 ans d'expérience</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl">👩‍💼</span>
+                  <div className="w-32 h-32 bg-gradient-to-br from-accent/10 to-accent/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-accent/20">
+                    <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-accent">MD</span>
+                    </div>
                   </div>
                   <h3 className="heading-md mb-2">Marie Dubois</h3>
                   <p className="text-body">Responsable Administrative</p>
+                  <p className="text-sm text-gray-500 mt-1">Gestion & Relations clients</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-4xl">🔨</span>
+                  <div className="w-32 h-32 bg-gradient-to-br from-accent/10 to-accent/20 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-accent/20">
+                    <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center">
+                      <span className="text-2xl font-bold text-accent">PM</span>
+                    </div>
                   </div>
                   <h3 className="heading-md mb-2">Paul Martin</h3>
                   <p className="text-body">Compagnon Menuisier</p>
+                  <p className="text-sm text-gray-500 mt-1">Spécialiste escaliers</p>
                 </div>
               </div>
             </div>

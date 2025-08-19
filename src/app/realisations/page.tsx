@@ -5,7 +5,7 @@ export default function RealisationsPage() {
       titre: "Cuisine moderne en chêne massif",
       description: "Cuisine contemporaine entièrement réalisée en chêne massif avec îlot central et finitions haut de gamme.",
       categorie: "Cuisine",
-      image: "🏠",
+      image: "CUISINE",
       details: ["Chêne massif", "Îlot central", "Électroménager intégré", "Plan de travail en granit"]
     },
     {
@@ -13,7 +13,7 @@ export default function RealisationsPage() {
       titre: "Dressing sur mesure",
       description: "Aménagement complet d'un dressing avec penderies, tiroirs et étagères modulables.",
       categorie: "Aménagement",
-      image: "👗",
+      image: "DRESSING",
       details: ["Mélaminé blanc", "Tiroirs à fermeture douce", "Éclairage LED", "Dimensions optimisées"]
     },
     {
@@ -21,7 +21,7 @@ export default function RealisationsPage() {
       titre: "Escalier quart tournant",
       description: "Escalier en bois massif avec rampe moderne et contremarches personnalisées.",
       categorie: "Escalier",
-      image: "🪜",
+      image: "ESCALIER",
       details: ["Hêtre massif", "Rampe inox", "Marches antidérapantes", "Finition vernie"]
     },
     {
@@ -29,7 +29,7 @@ export default function RealisationsPage() {
       titre: "Fenêtres à l'ancienne",
       description: "Rénovation complète de fenêtres anciennes avec double vitrage et respect du style d'époque.",
       categorie: "Menuiserie extérieure",
-      image: "🪟",
+      image: "FENÊTRES",
       details: ["Pin douglas", "Double vitrage", "Petits bois", "Peinture traditionnelle"]
     },
     {
@@ -37,7 +37,7 @@ export default function RealisationsPage() {
       titre: "Bibliothèque murale",
       description: "Bibliothèque sur mesure intégrée du sol au plafond avec échelle coulissante.",
       categorie: "Aménagement",
-      image: "📚",
+      image: "BIBLIO",
       details: ["Chêne teinté", "Étagères réglables", "Échelle sur rail", "Éclairage intégré"]
     },
     {
@@ -45,7 +45,7 @@ export default function RealisationsPage() {
       titre: "Porte d'entrée contemporaine",
       description: "Porte d'entrée design avec isolation renforcée et serrure multipoints.",
       categorie: "Menuiserie extérieure",
-      image: "🚪",
+      image: "PORTE",
       details: ["Aluminium et bois", "Isolation thermique", "Serrure 3 points", "Vitrage sécurisé"]
     }
   ];
@@ -77,8 +77,13 @@ export default function RealisationsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {realisations.map((realisation) => (
               <div key={realisation.id} className="card-simple overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-64 bg-gray-100 flex items-center justify-center text-6xl">
-                  {realisation.image}
+                <div className="h-64 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center border-b border-gray-200">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <span className="text-2xl font-bold text-accent">{realisation.image.slice(0,2)}</span>
+                    </div>
+                    <p className="text-sm font-medium text-gray-600">{realisation.image}</p>
+                  </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
