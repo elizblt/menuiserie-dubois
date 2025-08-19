@@ -23,7 +23,7 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        brand: {
+        primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
@@ -51,55 +51,30 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Couleurs premium pour la menuiserie
-        primary: {
-          50: "#fdf8f6",
-          100: "#f2e8e5", 
-          200: "#eaddd7",
-          300: "#e0cec7",
-          400: "#d2b8a9",
-          500: "#D2691E", // Orange bois chaud
-          600: "#8B4513", // Marron bois noble
-          700: "#6b3410",
-          800: "#5a2d0d",
-          900: "#2F1B14", // Brun sombre
-        },
-        woodAccent: {
-          50: "#fefdf8",
-          100: "#fdf9ed",
-          200: "#fcf3d9",
-          300: "#faebba",
-          400: "#f7dd8e",
-          500: "#CD853F", // Or pâle
-          600: "#b8703a",
-          700: "#a05b32",
-          800: "#864d2e",
-          900: "#70412a",
-        },
-        neutral: {
-          50: "#F5F5DC", // Beige crème
-          100: "#f0f0dc",
-          200: "#e8e8d0",
-          300: "#dcdcbf",
-          400: "#cbcba8",
-          500: "#b8b896",
-          600: "#a5a584",
-          700: "#8f8f73",
-          800: "#7a7a62",
-          900: "#696951",
-        },
-        // Couleurs shadcn/ui personnalisées
+        // Palette sobre et professionnelle
         wood: {
-          50: "#fdf8f6",
-          100: "#f2e8e5",
-          200: "#eaddd7", 
-          300: "#e0cec7",
-          400: "#d2b8a9",
-          500: "#8B4513", // Marron bois noble
-          600: "#6b3410",
-          700: "#5a2d0d",
-          800: "#2F1B14", // Brun sombre
-          900: "#1a0f08",
+          50: "#faf9f7",
+          100: "#f3f1ed",
+          200: "#e6e2db",
+          300: "#d4cfc5",
+          400: "#c0b8ab",
+          500: "#a67c52", // Ton bois principal
+          600: "#956a47",
+          700: "#7d573b",
+          800: "#674833",
+          900: "#563e2d",
+        },
+        sage: {
+          50: "#f6f7f6",
+          100: "#eaecea",
+          200: "#d4d7d5",
+          300: "#b8bdb9",
+          400: "#949a95",
+          500: "#2f4f4f", // Vert foncé accent
+          600: "#2a4545",
+          700: "#233a3a",
+          800: "#1d2f2f",
+          900: "#182727",
         }
       },
       borderRadius: {
