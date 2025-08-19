@@ -61,7 +61,7 @@ export function TestimonialsSection() {
 
                   {/* Commentaire */}
                   <blockquote className="text-muted-foreground leading-relaxed">
-                    "{temoignage.commentaire}"
+                    &ldquo;{temoignage.commentaire}&rdquo;
                   </blockquote>
 
                   {/* Projet */}
@@ -120,7 +120,7 @@ export function TestimonialsSection() {
             </div>
             <div className="space-y-2">
               <div className="text-3xl font-bold text-wood-800">15+</div>
-              <div className="text-sm text-muted-foreground">Années d\'expérience</div>
+              <div className="text-sm text-muted-foreground">Années d&apos;expérience</div>
             </div>
           </div>
         </motion.div>

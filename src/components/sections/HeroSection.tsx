@@ -25,7 +25,7 @@ export function HeroSection() {
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-wood-600/10 text-wood-800 px-4 py-2 rounded-full text-sm font-medium">
               <Star className="h-4 w-4 fill-current" />
-              <span>Plus de 15 ans d\'expérience</span>
+              <span>Plus de 15 ans d&apos;expérience</span>
             </div>
 
             {/* Titre principal */}
@@ -89,7 +89,7 @@ export function HeroSection() {
               className="pt-6 border-t"
             >
               <p className="text-sm text-muted-foreground">
-                <span className="font-medium">Zone d\'intervention:</span> Montauban, Toulouse, 
+                <span className="font-medium">Zone d&apos;intervention:</span> Montauban, Toulouse, 
                 Tarn-et-Garonne et départements limitrophes
               </p>
             </motion.div>

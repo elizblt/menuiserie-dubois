@@ -45,12 +45,18 @@ export const metadata: Metadata = {
     title: "Menuiserie Dubois - Artisan Menuisier Montauban",
     description: "Spécialiste cuisines sur mesure, escaliers bois, aménagements intérieurs à Montauban et région.",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: {
     index: true,
     follow: true,
   },
 };
+
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+  };
+}
 
 export default function RootLayout({
   children,

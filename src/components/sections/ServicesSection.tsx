@@ -46,7 +46,7 @@ export function ServicesSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Du concept à la réalisation, nous vous accompagnons dans tous vos projets 
-            d\'aménagement et de menuiserie sur mesure.
+            d&apos;aménagement et de menuiserie sur mesure.
           </p>
         </motion.div>
 

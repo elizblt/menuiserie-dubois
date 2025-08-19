@@ -24,7 +24,7 @@ export function CTASection() {
               Prêt à donner vie à votre <span className="font-serif">projet</span> ?
             </h2>
             <p className="text-xl text-wood-200 max-w-2xl mx-auto leading-relaxed">
-              Contactez-nous dès aujourd\'hui pour un devis personnalisé et gratuit. 
+              Contactez-nous dès aujourd&apos;hui pour un devis personnalisé et gratuit. 
               Nous étudions ensemble la faisabilité et les détails de votre projet.
             </p>
           </motion.div>
